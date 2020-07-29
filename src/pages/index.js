@@ -8,8 +8,9 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
+    <h1 style={{ color: 'purple' }}>Hello African people.</h1>
+    <p>This is my first working site on Gatsby Cloud and from now i'm trying to create all
+      my pages to create using this technique>>>></p>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
