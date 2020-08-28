@@ -6,15 +6,16 @@ import Header from '../components/header/Header'
 
 
 const Layout = props => {
-
   return (
-    <MuiThemeProvider theme={theme}>
-      <CssBaseline />
-      <Header />
-      <main>
-        {props.children}
-      </main>
-    </MuiThemeProvider>
+    <>
+      <MuiThemeProvider theme={theme}>
+        <CssBaseline />
+        <Header />
+        <main>
+          {props.children}
+        </main>
+      </MuiThemeProvider>
+    </>
   )
 }
 
