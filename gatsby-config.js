@@ -5,6 +5,7 @@ module.exports = {
     author: `Art Bachmann`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-theme-material-ui`,
@@ -14,10 +15,14 @@ module.exports = {
             google: [
               {
                 family: `Montserrat`,
-                variants: [`300`, `400`, `500`],
+                variants: [`300`, `400`, `500`, `600`, `700`],
               },
               {
                 family: `Open Sans`,
+                variants: [`300`, `400`, `500`, `600`, `700`],
+              },
+              {
+                family: `Barlow`,
                 variants: [`300`, `400`, `500`, `600`, `700`],
               },
             ],
@@ -28,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -37,10 +42,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Art Bachmann`,
+        short_name: `AB CV`,
         start_url: `/`,
-        display: `minimal-ui`,
+        background_color: '#303030',
+        theme_color: '#87cdd3',
+        display: `standalone`,
+        //icon: 'src/images/gatsby-icon.png',
       },
     },
     {
